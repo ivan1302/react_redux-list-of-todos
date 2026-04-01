@@ -6,7 +6,7 @@ import { getUser } from '../../api';
 import { currentTodoSlice } from '../../features/currentTodo';
 import { User } from '../../types/User';
 
-export const TodoModal: React.FC = () => {
+export const TodoModal = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [user, setSelectedUser] = useState<User | null>(null);
   const dispatch = useDispatch();

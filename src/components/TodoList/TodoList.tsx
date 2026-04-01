@@ -4,7 +4,7 @@ import { useAppSelector } from '../../app/hook';
 import { useDispatch } from 'react-redux';
 import { currentTodoSlice } from '../../features/currentTodo';
 
-export const TodoList: React.FC = () => {
+export const TodoList = () => {
   const { query, status } = useAppSelector(state => state.filter);
   const todos = useAppSelector(state => state.todos);
   const selectedTodo = useAppSelector(state => state.currentTodo);

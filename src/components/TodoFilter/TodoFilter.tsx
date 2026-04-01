@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { filterSlice } from '../../features/filter';
 import { Status } from '../../types/Status';
 
-export const TodoFilter: React.FC = () => {
+export const TodoFilter = () => {
   const { query, status } = useAppSelector(state => state.filter);
   const dispatch = useDispatch();
 
